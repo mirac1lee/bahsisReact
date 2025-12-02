@@ -26,6 +26,9 @@ function App() {
 
     if (!isBillValid || !isPeopleValid || !isTipSelected) {
         
+      setTipPerPerson('0.00');
+      setTotalPerPerson('0.00');
+      
       if (bill !== '' && !isBillValid) {
         setErrorMessage("Fatura değeri geçersiz.");
       } else if (people !== '' && !isPeopleValid) {
@@ -42,6 +45,8 @@ function App() {
     const totalAmount = billAmount + totalTip;
     const totalPerPersonAmount = totalAmount / numberOfPeople;
 
+    setTipPerPerson(tipAmountPerPerson.toFixed(2));
+    setTotalPerPerson(totalPerPersonAmount.toFixed(2));
   
   }, [bill, people, tipPercentage]);
 

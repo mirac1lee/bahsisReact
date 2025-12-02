@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+:root {
+    --bgColor: #C5E4E7;
+    --bgContainer: #FFFFFF;
+    --btnColor: #00474B;
+    --btnReset: #26C2AE;
+    --inputColor: #F3F9FA;
+    --textColor: #5E7A7D;
+}
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: var(--bgColor);
+    text-align: center;
+}
+.container {
+    background-color: var(--bgContainer);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 75%);
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.bill {
+    font-size: 16px;
+    color: var(--textColor);
+    text-align: left;
+    padding-left: 32px;
+}
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    border: none;
+    background-color: var(--inputColor);
+    height: 34px;
+    border-radius: 6px;
+    text-align:center;
+    font-size: medium;
+}
+.people  {
+    font-size: 16px;
+    color: var(--textColor);
+    text-align: left;
+    padding-left: 32px;
+    padding-top: 10px;
+}
+button {
+    background-color: var(--btnColor);
+    border: none;
+    color: var(--bgContainer);
+    padding: 15px 30px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+    cursor: pointer;
+}
+.select {
+    display: flex;
+    flex-direction: column;
+}
+.box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 32px;
+    margin-top: 20px;
+}
+.box2 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 0 32px;
+    margin-top: 20px;
+}
+.box3 {
+    margin-top: 20px;
+}
+.person {
+    background-color: var(--btnColor);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 20px;
+}
+.tip {
+    margin-top: 20px;
+}
+.tip, .total {
+    color: var(--bgContainer);
+}
+.tip h2, .total h2 {
+    margin-top: 10px;
+    background-color: var(--bgColor);
+    height: 40px;
+    width: 120px;
+    margin-left: 140px;
+    border-radius: 10px;
+    color: black;
+}
+.resetBtn {
+    background-color: var(--btnReset);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 80px;
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        font-size: larger;
+    }
+    h1 {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+    button {
+        font-size: larger;
+    }
+    .person{
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        text-align: center;    
+    }
+    input {
+        font-size: larger;
+        padding: 15px;
+    }
+    .bill, .people {
+        font-size: larger;
+    }
+
+
+}
